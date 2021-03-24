@@ -1,5 +1,6 @@
-module.exports = (req, res) => {
-    const { name = 'World' } = req.query
-    res.status(200).send(`Hello ${name}!`)
+const axios = require('axios');
+module.exports = async(req, res) => {
+    let postHooks = await axios.get('https://development.homestaymatch.com/get-csrf')
+    res.json({status:postHooks.headers})
   }
   
