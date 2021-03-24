@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/vinotht1/serverless-sample/issues"
   },
-  "homepage": "https://github.com/vinotht1/serverless-sample#readme"
+  "homepage": "https://github.com/vinotht1/serverless-sample#readme",
+  "dependencies": {
+    "axios": "^0.21.1"
+  }
 }
